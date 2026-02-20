@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project analyzes the Olist E-Commerce dataset using SQL to evaluate customer retention, revenue performance, product insights, customer experience, and operational efficiency.
+This project analyzes the **Olist Brazilian E-Commerce dataset** using SQL to evaluate customer retention, revenue performance, product insights, customer experience, and operational efficiency.
 
 The objective is to extract meaningful business insights that support data-driven decision making in an E-commerce environment.
 
@@ -10,9 +10,12 @@ The objective is to extract meaningful business insights that support data-drive
 
 ## 🗂 Dataset Information
 
-The analysis is based on the **Olist Brazilian E-Commerce Public Dataset** from Kaggle.
+The analysis is based on the **Olist Brazilian E-Commerce Public Dataset** available on Kaggle.
 
-The dataset consists of multiple relational tables including:
+🔗 Dataset Source:  
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+The dataset includes multiple relational tables such as:
 
 - Customers
 - Orders
@@ -23,16 +26,17 @@ The dataset consists of multiple relational tables including:
 - Reviews
 - Geolocation data
 
-The relational structure enables deep analytical exploration using SQL joins and aggregations.
+Due to GitHub file size limitations (25MB per file), the raw dataset files are not included in this repository.  
+You can download the complete dataset directly from the Kaggle link above.
 
 ---
 
-## 🔍 Business Problems Solved
+## 🔍 Business Problems Addressed
 
 ### 1️⃣ Customer Retention
 - Identified repeat customers using order frequency analysis.
 - Calculated the percentage of customers placing more than one order.
-- Measured monthly retention rate using cohort-style logic.
+- Measured monthly retention rate using date-based SQL logic.
 
 ### 2️⃣ Revenue Analysis
 - Calculated total revenue per month.
@@ -41,7 +45,7 @@ The relational structure enables deep analytical exploration using SQL joins and
 
 ### 3️⃣ Product Performance
 - Identified top 10 product categories by revenue.
-- Determined categories with highest cancellation rates.
+- Determined categories with the highest cancellation rate.
 - Evaluated best-selling products by volume and revenue.
 
 ### 4️⃣ Customer Experience
@@ -52,7 +56,7 @@ The relational structure enables deep analytical exploration using SQL joins and
 ### 5️⃣ Operational Insights
 - Calculated average delivery time.
 - Compared on-time vs late deliveries.
-- Evaluated seller performance based on fulfillment metrics.
+- Evaluated seller performance based on fulfillment efficiency.
 
 ---
 
@@ -61,8 +65,8 @@ The relational structure enables deep analytical exploration using SQL joins and
 - SQL Joins across multiple relational tables
 - GROUP BY & aggregate functions (SUM, AVG, COUNT)
 - Window functions for ranking and contribution analysis
-- Date-based analysis for monthly trends
-- KPI calculations for retention and revenue tracking
+- Date-based trend analysis
+- KPI calculation for retention and revenue metrics
 
 ---
 
@@ -71,25 +75,25 @@ The relational structure enables deep analytical exploration using SQL joins and
 - A small percentage of customers contribute disproportionately to total revenue.
 - Late deliveries are associated with lower average review scores.
 - Certain product categories show higher cancellation tendencies.
-- Revenue trends reveal seasonality patterns across months.
-- Seller performance significantly impacts delivery timelines and customer ratings.
+- Revenue trends reveal seasonal purchasing patterns.
+- Seller performance directly impacts delivery timelines and customer satisfaction.
 
 ---
 
-## 💼 Business Impact
+## 💼 Business Value
 
-This project demonstrates the application of SQL in:
+This project demonstrates how SQL can be used to:
 
-- Customer retention analysis
-- Revenue performance tracking
-- Product category optimization
-- Operational performance evaluation
-- Customer satisfaction analysis
+- Analyze customer retention behavior
+- Track revenue growth and AOV trends
+- Identify operational inefficiencies
+- Improve customer satisfaction
+- Support data-driven strategic decisions
 
 ---
 
 ## 🚀 Future Improvements
 
-- Build a Power BI dashboard for visualization
+- Develop a Power BI dashboard for visualization
 - Implement advanced cohort retention analysis
-- Perform predictive modeling for churn forecasting
+- Perform predictive modeling for customer churn
